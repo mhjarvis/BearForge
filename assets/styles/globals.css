@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+:root {
+	--charcoal: #2d2d2d;
+	--crimson: #a30000;
+	--beige: #f5e8c7;
+	--dark-olive: #3c4f2f;
+	--crimson-dark: #800000;
+}
+
+.bg-charcoal {
+	background-color: var(--charcoal);
+}
+.text-crimson {
+	color: var(--crimson);
+}
+.bg-beige {
+	background-color: var(--beige);
+}
+.border-crimson {
+	border-color: var(--crimson);
+}
+.bg-dark-olive {
+	background-color: var(--dark-olive);
+}
+.bg-crimson-dark {
+	background-color: var(--crimson-dark);
+}
+.font-playfair-display {
+	font-family: "Playfair Display", serif;
+}
+
+body {
+	background-color: var(--charcoal);
+	color: var(--beige);
+}
+
+select,
+input {
+	background-color: var(--beige);
+	color: var(--charcoal);
+}
+
+select:focus,
+input:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px var(--crimson);
+}
